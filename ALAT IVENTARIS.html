@@ -1,0 +1,69 @@
+ <!-- CONTENT 1 -->
+  
+<html>
+<head>
+    <title>WEB WITAPALA</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <div class="navbar-countainer">
+        <img src="wpl.png" alt="Logo WITAPALA">
+    </div>
+
+    <!-- MENU -->
+    <nav class="menu">
+        <a href="index.html">HOME</a>
+        <a href="#inventaris">INVENTARIS</a>
+        <a href="CONTACT PERSONT.html">CONTACT PERSON</a>
+    </nav>
+
+    <!-- CONTENT -->
+    <main>
+        <section class="welcome">
+            <h2>SELAMAT DATANG DI WITAPALA</h2>
+            <p>Menjaga Alam, Menjunjung Persaudaraan.</p>
+        </section>
+
+        <!-- INVENTARIS -->
+        <section class="inventaris-container" id="inventaris">
+            <h2>DATA INVENTARIS WITAPALA</h2>
+
+            <form id="formBarang">
+                <input type="text" id="namaBarang"
+                    placeholder="Nama barang" required>
+
+                <input type="number" id="jumlahBarang"
+                    placeholder="Jumlah" min="1" required>
+
+                <button type="submit">Tambah Barang</button>
+            </form>
+
+            <div class="table-wrapper">
+                <table class="tabel-inventaris">
+                    <thead>
+                        <tr>
+                            <th>NO</th>
+                            <th>NAMA BARANG</th>
+                            <th>JUMLAH</th>
+                            <th>AKSI</th>
+                        </tr>
+                    </thead>
+                    <tbody id="daftarBarang"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- KONTAK -->
+        <section class="kontak" id="kontak">
+            <h2>CONTACT PERSON</h2>
+            <p>WhatsApp: 0851-2261-0406</p>
+            <p>Instagram: @WITAPALA</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
